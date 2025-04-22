@@ -39,7 +39,7 @@ const DoctorDetails = () => {
     return (
         <div className='max-w-screen-xl mx-auto p-10 bg-[#EFEFEF]'>
 
-        <div className='card card-side flex flex-col justify-between items-center rounded-3xl bg-white p-10 px-10 gap-5  shadow-sm mb-12'>
+        <div className='card card-side flex flex-col sm:p-3 justify-between items-center rounded-3xl bg-white p-10 px-10 gap-5  shadow-sm mb-12'>
             <h1 className='text-3xl font-bold text-center'>Book an appointment</h1>
             <p className='text-gray-500 text-center'>Each doctor profile includes their image, name, qualifications, and specialty, along with their experience (highlighted with a ‘+’ prefix). The profile also displays their consultancy fee (numeric value for flexible currency display), hospital affiliation (name and address), and weekly availability (listed as days). A registration number validates their credentials, while a ‘View Details’ button links to their full profile page. This structured format provides patients with essential information for informed decision-making when booking appointments.</p>
         </div>
@@ -51,12 +51,12 @@ const DoctorDetails = () => {
             <hr className='border border-dashed text-gray-200' />
             <div className='flex justify-between items-center'>
                 <div className=" text-sm font-semibold p-4 ">Availability</div>
-                <div className="badge badge-outline bg-[#cff1d8] text-[#0c6825] text-sm font-semibold p-4 rounded-4xl ">Doctor Available Today</div>
+                <div className=" bg-[#cff1d8] text-[#0c6825] text-sm font-semibold px-4 py-2 rounded-4xl ">Doctor Available Today</div>
             </div>
             <hr className='border text-gray-200' />
             <br />
-            <div className="badge badge-outline bg-[#f1eacf] text-[#e4aa3e] text-sm font-semibold p-4 rounded-4xl "> <FaCircleExclamation />
-            Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</div>
+            <div className=" bg-[#f1eacf] text-[#e4aa3e] text-sm font-semibold py-3 px-5 rounded-4xl flex items-center"> <FaCircleExclamation />
+                Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</div>
             <button 
                 onClick={() =>  handleBookAppointmentNow(doctor.id)}
                 className={`
@@ -78,7 +78,7 @@ const DoctorDetails = () => {
         </div>
 
 
-            <div className="card card-side bg-white gap-6 p-10 shadow-sm rounded-3xl">
+            <div className="card  flex flex-col lg:flex-row bg-white gap-6 p-10 shadow-sm rounded-3xl">
                 <figure>
                     <img className='w-72'
                     src={doctorSample}
@@ -92,7 +92,7 @@ const DoctorDetails = () => {
                     <p className='flex items-center gap-2 text-gray-600'><TbCircleLetterR className='text-lg'/>
                                         Reg No : {doctor.registrationNumber} </p>
                                         <hr className='border border-dashed text-gray-300' />
-                    <p className='font-bold flex items-center'>Availability:  <span>
+                    <p className='font-bold flex flex-col lg:flex-row items-center mt-2'>Availability:  <span className='mt-2'>
                         {
                             doctor.availability.map((avail,index) => {
                                 return <span key={index} className='text-[#FFA000] bg-[#ecdabb] font-semibold mx-1 p-1 px-3 rounded-full'>{avail}</span>
