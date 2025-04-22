@@ -1,0 +1,194 @@
+[
+    {
+    "id": 1,
+    "image": "https://example.com/doctors/doctor1.jpg",
+    "name": "Dr. Sarah Johnson",
+    "education": "MD, Harvard Medical School",
+    "speciality": "Cardiology",
+    "experience": "+15 years",
+    "consultancyFee": 200,
+    "registrationNumber": "MED12345678",
+    "detailsRoute": "/doctors/1",
+    "hospital": {
+        "name": "Metropolitan Heart Institute",
+        "address": "123 Cardiac Lane, Boston, MA 02115"
+    },
+    "availability": ["Monday", "Wednesday", "Friday"]
+    },
+    {
+    "id": 2,
+    "image": "https://example.com/doctors/doctor2.jpg",
+    "name": "Dr. Michael Chen",
+    "education": "MBBS, Johns Hopkins University",
+    "speciality": "Neurology",
+    "experience": "+12 years",
+    "consultancyFee": 180,
+    "registrationNumber": "MED23456789",
+    "detailsRoute": "/doctors/2",
+    "hospital": {
+        "name": "NeuroCare Center",
+        "address": "456 Brain Avenue, Baltimore, MD 21201"
+    },
+    "availability": ["Tuesday", "Thursday", "Saturday"]
+    },
+    {
+    "id": 3,
+    "image": "https://example.com/doctors/doctor3.jpg",
+    "name": "Dr. Emily Rodriguez",
+    "education": "DO, Stanford University",
+    "speciality": "Pediatrics",
+    "experience": "+8 years",
+    "consultancyFee": 150,
+    "registrationNumber": "MED34567890",
+    "detailsRoute": "/doctors/3",
+    "hospital": {
+        "name": "Children's Wellness Hospital",
+        "address": "789 Pediatric Street, Palo Alto, CA 94304"
+    },
+    "availability": ["Monday", "Wednesday", "Friday"]
+    },
+    {
+    "id": 4,
+    "image": "https://example.com/doctors/doctor4.jpg",
+    "name": "Dr. David Wilson",
+    "education": "MD, Mayo Clinic College",
+    "speciality": "Orthopedics",
+    "experience": "+18 years",
+    "consultancyFee": 220,
+    "registrationNumber": "MED45678901",
+    "detailsRoute": "/doctors/4",
+    "hospital": {
+        "name": "Bone & Joint Center",
+        "address": "101 Ortho Road, Rochester, MN 55905"
+    },
+    "availability": ["Tuesday", "Thursday", "Saturday"]
+    },
+    {
+    "id": 5,
+    "image": "https://example.com/doctors/doctor5.jpg",
+    "name": "Dr. Priya Patel",
+    "education": "MBBS, AIIMS Delhi",
+    "speciality": "Dermatology",
+    "experience": "+10 years",
+    "consultancyFee": 170,
+    "registrationNumber": "MED56789012",
+    "detailsRoute": "/doctors/5",
+    "hospital": {
+        "name": "Skin Health Specialists",
+        "address": "202 Dermatology Plaza, New Delhi 110029"
+    },
+    "availability": ["Monday", "Wednesday", "Friday"]
+    },
+    {
+    "id": 6,
+    "image": "https://example.com/doctors/doctor6.jpg",
+    "name": "Dr. James Kim",
+    "education": "MD, UCLA School of Medicine",
+    "speciality": "Oncology",
+    "experience": "+14 years",
+    "consultancyFee": 250,
+    "registrationNumber": "MED67890123",
+    "detailsRoute": "/doctors/6",
+    "hospital": {
+        "name": "Cancer Treatment Center",
+        "address": "303 Oncology Drive, Los Angeles, CA 90095"
+    },
+    "availability": ["Tuesday", "Thursday", "Saturday"]
+    },
+    {
+    "id": 7,
+    "image": "https://example.com/doctors/doctor7.jpg",
+    "name": "Dr. Olivia Smith",
+    "education": "MBChB, University of Oxford",
+    "speciality": "Gynecology",
+    "experience": "+9 years",
+    "consultancyFee": 190,
+    "registrationNumber": "MED78901234",
+    "detailsRoute": "/doctors/7",
+    "hospital": {
+        "name": "Women's Health Clinic",
+        "address": "404 Gynecology Lane, Oxford OX1 2JD"
+    },
+    "availability": ["Monday", "Tuesday", "Friday"]
+    },
+    {
+    "id": 8,
+    "image": "https://example.com/doctors/doctor8.jpg",
+    "name": "Dr. Robert Taylor",
+    "education": "MD, Yale School of Medicine",
+    "speciality": "Psychiatry",
+    "experience": "+20 years",
+    "consultancyFee": 210,
+    "registrationNumber": "MED89012345",
+    "detailsRoute": "/doctors/8",
+    "hospital": {
+        "name": "Mental Wellness Institute",
+        "address": "505 Psychiatry Avenue, New Haven, CT 06510"
+    },
+    "availability": ["Wednesday", "Thursday", "Sunday"]
+    },
+    {
+    "id": 9,
+    "image": "https://example.com/doctors/doctor9.jpg",
+    "name": "Dr. Aisha Mohammed",
+    "education": "MBBS, King's College London",
+    "speciality": "Endocrinology",
+    "experience": "+11 years",
+    "consultancyFee": 175,
+    "registrationNumber": "MED90123456",
+    "detailsRoute": "/doctors/9",
+    "hospital": {
+        "name": "Diabetes & Hormone Center",
+        "address": "606 Endocrine Street, London WC2R 2LS"
+    },
+    "availability": ["Monday", "Thursday", "Saturday"]
+    },
+    {
+    "id": 10,
+    "image": "https://example.com/doctors/doctor10.jpg",
+    "name": "Dr. Daniel Brown",
+    "education": "DO, University of Michigan",
+    "speciality": "Gastroenterology",
+    "experience": "+13 years",
+    "consultancyFee": 195,
+    "registrationNumber": "MED01234567",
+    "detailsRoute": "/doctors/10",
+    "hospital": {
+        "name": "Digestive Health Center",
+        "address": "707 GI Boulevard, Ann Arbor, MI 48109"
+    },
+    "availability": ["Tuesday", "Friday", "Sunday"]
+    },
+    {
+    "id": 11,
+    "image": "https://example.com/doctors/doctor11.jpg",
+    "name": "Dr. Sophia Lee",
+    "education": "MD, University of Toronto",
+    "speciality": "Rheumatology",
+    "experience": "+7 years",
+    "consultancyFee": 160,
+    "registrationNumber": "MED11223344",
+    "detailsRoute": "/doctors/11",
+    "hospital": {
+        "name": "Arthritis Care Clinic",
+        "address": "808 Joint Street, Toronto, ON M5G 1X5"
+    },
+    "availability": ["Monday", "Wednesday", "Friday"]
+    },
+    {
+    "id": 12,
+    "image": "https://example.com/doctors/doctor12.jpg",
+    "name": "Dr. Carlos Mendez",
+    "education": "MBBS, University of Sydney",
+    "speciality": "Pulmonology",
+    "experience": "+16 years",
+    "consultancyFee": 230,
+    "registrationNumber": "MED55667788",
+    "detailsRoute": "/doctors/12",
+    "hospital": {
+        "name": "Lung Health Institute",
+        "address": "909 Respiratory Road, Sydney NSW 2006"
+    },
+    "availability": ["Tuesday", "Thursday", "Saturday"]
+    }
+]
