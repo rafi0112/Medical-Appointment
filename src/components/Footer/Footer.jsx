@@ -18,7 +18,7 @@ const Footer = () => {
                 
                 <div className='flex items-center'>
                     <img src={logo} alt="" className='w-6' />
-                    <a className="btn btn-ghost  text-xl">phudu</a>
+                    <a className="btn btn-ghost  text-xl">Medi</a>
                 </div>
                 <hr className='border border-dashed border-gray-400' />
                 <nav className="grid grid-flow-col">
