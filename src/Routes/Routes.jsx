@@ -7,19 +7,21 @@ import Home from "../pages/Home/Home";
 import Error from "../pages/Error/Error";
 import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
 import MyAppointment from "../pages/MyAppointment/MyAppointment";
+import Blogs from "../pages/Blogs/Blogs";
 
 export const router = createBrowserRouter([
     {
     path: "/",
     Component: Root,
     loader: () => fetch("data.json"),
-    // errorElement: Error,
+    errorElement: <Error />,
     children: [
         {
             index: true,
             path: "/",
             loader : ()=> fetch("data.json"),
-            Component : Home
+            Component : Home,
+            errorElement: <Error />
         },
         {
             path: "/doctor/:id",
@@ -30,6 +32,14 @@ export const router = createBrowserRouter([
             path: "/bookings",
             loader: () => fetch(`data.json`),
             Component: MyAppointment
+        },
+        {
+            path: "/blogs",
+            Component: Blogs
+        },
+        {
+            path: "*",
+            element: <Error />
         }
     ]
     },

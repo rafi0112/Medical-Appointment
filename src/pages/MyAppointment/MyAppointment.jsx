@@ -50,36 +50,49 @@ const handleCancelAppointment = (id) => {
     );
 }
 
+const handleBackToHome = () => {
+    window.location.href = '/';
+}
+
 return (
     <div className='max-w-screen-xl mx-auto'>
-        <h1 className='text-3xl font-bold text-center mt-12'>My Appointments</h1>
-        <div className=' bg-white rounded-3xl p-10 mt-10'>
-        <ResponsiveContainer width="100%" height={400}>
-                <BarChart
-                    data={bookedAppointments}
-                    margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
-                >
-                    <XAxis dataKey="name" tick={renderCustomAxisTick} />
-                    <YAxis />
-                    <Bar
-                        dataKey="consultancyFee"
-                        shape={<TriangleBar />}
-                        label={{ position: 'top' }}
+        {
+            bookedAppointments.length > 0 &&   
+            (<div className=' bg-white rounded-3xl p-10 mt-10'>
+            <ResponsiveContainer width="100%" height={400}>
+                    <BarChart
+                        data={bookedAppointments}
+                        margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
                     >
-                        {
-                            bookedAppointments.map((entry, index) => (
-                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                            ))
-                        }
-                    </Bar>
-                </BarChart>
-            </ResponsiveContainer>
-        </div>
+                        <XAxis dataKey="name" tick={renderCustomAxisTick} />
+                        <YAxis />
+                        <Bar
+                            dataKey="consultancyFee"
+                            shape={<TriangleBar />}
+                            label={{ position: 'top' }}
+                        >
+                            {
+                                bookedAppointments.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))
+                            }
+                        </Bar>
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>)
+        }
 
         <div className='p-5'>
-            <h1 className='text-3xl font-bold text-center mt-12 mb-12'>My Appointments</h1>
+            <h1 className='text-3xl font-bold text-center mt-12 mb-12'>My Today's Appointments</h1>
+            <p className='text-sm text-center mb-12'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.</p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4'>
-                {
+                {   
+                    bookedAppointments.length === 0 ? 
+                    (
+                        <button onClick={handleBackToHome} className='btn bg-[#176AE5] rounded-3xl text-white font-bold px-5'>Back To Home</button>
+                    )
+                    :
+                    (
                     bookedAppointments.map(doctor => (
                         <div key={doctor.id} className='bg-white rounded-lg p-6 shadow-md'>
                             <div className='flex justify-between items-center'>
@@ -93,6 +106,7 @@ return (
                             <button onClick={() => handleCancelAppointment(doctor.id)} className='text-red-700 rounded-4xl border border-red-700 w-full px-10 py-2'>Cancel Appointment</button>
                         </div>
                     ))
+                    )
                 }
             </div>
         </div>
