@@ -1,0 +1,22 @@
+[
+    {
+        "image": "patients-icon.svg",
+        "title": "Happy Patients",
+        "value": "+300"
+    },
+    {
+        "image": "clinic-icon.svg",
+        "title": "Clinic Visits",
+        "value": "+9000"
+    },
+    {
+        "image": "doctor-icon.svg",
+        "title": "Expert Doctors",
+        "value": "+1000"
+    },
+    {
+        "image": "surgery-icon.svg",
+        "title": "Surgeries",
+        "value": "+2000"
+    }
+]
