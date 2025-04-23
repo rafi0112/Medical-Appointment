@@ -143,7 +143,7 @@ const Home = () => {
             {/* Stats Cards Section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 p-4'>
                 {statsCards.map((card, index) => (
-                    <div ref={visibilityData[index].ref} key={index} className="card bg-base-100 w-64 h-52 shadow-sm">
+                    <div ref={visibilityData[index].ref} key={index} className="card bg-base-100 lg:w-64 h-52 shadow-sm">
                         <figure className="px-10 pt-10">
                             <img src={card.image} alt={card.title} className="rounded-xl" />
                         </figure>
