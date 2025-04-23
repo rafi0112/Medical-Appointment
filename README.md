@@ -82,7 +82,7 @@ yarn add recharts
 ```
 npm install tailwindcss @tailwindcss/vite
 ```
-  # Configure @tailwindcss/vite plugin to your Vite configuration.
+  #### Configure @tailwindcss/vite plugin to your Vite configuration.
   ```
   import { defineConfig } from 'vite'
   import tailwindcss from '@tailwindcss/vite'
@@ -92,7 +92,7 @@ npm install tailwindcss @tailwindcss/vite
     ],
   })
   ```
-  # Add an @import to your CSS file that imports Tailwind CSS.
+  #### Add an @import to your CSS file that imports Tailwind CSS.
   ```
   @import "tailwindcss";
   ```
